@@ -12,6 +12,7 @@
 <body>
   <header>
     <img src="images/logo3.png" alt="Logo Weather">
+    
     <section class="headings">
         <h2>The Weather site</h2>
         <div class="motto">The Weather on Time</div>
@@ -32,7 +33,15 @@
   <main>
     <h1>Preston Town</h1>
     <section>
-        <img src="images/preston3.png" alt="Preston Town">
+        
+        <img srcset="images/img-small-320.png 320w,
+                  images/img-medium-480.png 480w,
+                  images/img-large-760.png 760w"
+             sizes="(max-width: 320px) 280px,
+                    (max-width: 480px) 440px,
+                    800px"
+             src="images/img-large-760.png" alt="Preston Town">
+             
         <div class="sumary">
           <h3>Weather Sumary</h3>
           <table class="tab">
@@ -83,7 +92,9 @@
 
   <footer>
     <p>
-      &copy;2019 The Weather site | Atributions |Faviola Arellano Saturday, 19 May 2019   
+      
+      &copy;2019 The Weather site | Atributions |Faviola Arellano  
+      <script src="js/currentdate.js"></script> 
 
     </p>
   </footer>
