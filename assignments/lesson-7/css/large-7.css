@@ -1,0 +1,29 @@
+/* Media Query for medium + screens */
+/*@media only screen and ( min-width: 40em) 
+{
+  li:first-child { display: none;	}
+  li { display: inline-block; margin-right: 1rem;}	
+  li a { color:#0A0A0A;}
+}*/
+
+@media screen and (min-width: 40em) {
+	header {
+		flex-flow:row wrap;
+		padding-bottom: 20px;
+	}
+
+	header nav {
+		width: 100%;
+		background: rgba(255,255,255,.2);
+		text-align: center;
+		padding: 20px;
+	}
+
+	header nav a {
+		margin: 0 20px;
+	}
+
+	header .logo {
+		margin-bottom: 20px;
+	}
+}

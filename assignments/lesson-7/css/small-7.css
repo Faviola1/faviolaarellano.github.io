@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Philosopher&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+* { padding: 0; box-sizing: border-box; } 
+
+body {
+    background-color: #FAFAFA;
+    font-family: 'Roboto Slab', sans-serif;
+    background-size:cover;
+}
+
+.container {
+	margin: auto;
+	width: 90%;
+	max-width: 1000px;
+	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+header {
+	width: 100%;
+	padding: 30px 0 0 0;
+  background-color: #4FD0FC;
+	border: 1px solid #bbb;
+	box-shadow: 0 0 30px #777;
+	text-align: center;
+}
+
+header .headings{
+  margin: auto;
+	width: 100%;
+  display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+  align-items:center;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+.headings .logo{
+    width: 20%;
+    flex:1 1 auto;
+}
+
+.headings img{
+  width: 100 px;
+}
+
+.headings .motto{
+  width: 70%;
+  flex:1 1 auto;
+}
+
+header nav {
+  width: 100%;
+  margin: 0 auto;	
+  max-width: 100%; 
+  background-color: #898989;
+  text-align: center; 
+  padding: 10px;
+}
+
+header nav a {
+  color: #fff;
+	text-decoration: none;
+	margin-right: 40px;
+  font-size: 18px;
+  padding: 10px;
+}
+header nav a:hover {
+  color: #0A0A0A; 
+  background-color: #fff; 
+  font-weight: 700;
+    padding: 10px;
+  }
+
+header nav .active {
+background-color: #335980;
+}
+
+main {
+  background: #fff;
+  align-self: auto;
+	padding: 20px;
+	width: 100%;
+}
+.image {
+  width: 100%;
+  vertical-align: top;
+}
+
+table, td, th{
+	border: 1px solid rgba(0,0,0, .2);
+}
+
+table {
+	border-collapse: collapse;
+	width: 30%px;
+	text-align: center;
+}
+
+th, td {
+	padding: 10px 20px;
+}
+
+th {
+	background: #335980;
+	color: #fff;
+}
+
+main article h2 {
+	margin-bottom: 20px;
+	font-weight: normal;
+	font-size: 32px;
+}
+
+main article p {
+	margin-bottom: 20px;
+	font-size: 14px;
+	line-height: 27px;
+}
+ footer {
+  margin: 1.25rem auto;
+  padding: 2rem;
+  width: 100%;
+  max-width: 1000px;
+  align-self: auto;
+  background:#335980;
+  color:#FAFAFA;
+}
+
+h1,h2{ padding: .5rem; 
+    font-family: 'Philosopher', sans-serif;
+    font-size: 2rem;
+    font-size: 2rem;
+    color:#335980;}
+
+h3,h4,h6{
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1.5rem;
+    text-align: left;
+    color:#335980;
+    border-bottom: 2px solid #bbb;
+}
+
+article{
+	margin: 10px auto;
+	background-color: #4FD0FC;
+    border: 1px solid #bbb;
+    color:#335980;
+	}
+
+
+
+/* Media Query for medium + screens */
+@media only screen and ( min-width: 40em) 
+{
+  li:first-child { display: none;	}
+  li { display: inline-block; margin-right: 1rem;}	
+  li a { color:#0A0A0A;}
+}
