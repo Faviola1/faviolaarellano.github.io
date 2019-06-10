@@ -25,7 +25,7 @@ header {
   background-color: #4FD0FC;
 	border: 1px solid #bbb;
 	box-shadow: 0 0 30px #777;
-	/*text-align: center;*/
+	text-align: center;
 }
 
 header .headings{
@@ -39,13 +39,10 @@ header .headings{
 }
 
 .headings .logo{
-  /*width: 120px;
-  height: auto;*/
-  float: left;
-}
+    /*width: 20%;
+    flex:1 1 auto;*/
+    float: left;
 
-.headings img{
-  width: 100 px;
 }
 
 .headings .motto{
@@ -58,9 +55,12 @@ header nav {
   margin: 0 auto;	
   max-width: 100%; 
   background-color: #898989;
-  padding: 10px;
+  display:flex;
+  flex-direction: column;
+  /*padding: 10px;*/
 }
 
+.responsive a{ display: block; }
 header nav a {
   color: #fff;
 	text-decoration: none;
@@ -80,9 +80,12 @@ background-color: #335980;
 }
 
 main {
-  background: #fff;
+  width:90%;
+  max-width:900px;
+  background: #FAFAFA;
   align-self: auto;
-	padding: 20px;
+  padding: 10px;
+  margin:20px;
 	width: 100%;
 }
 .image {
@@ -108,7 +111,10 @@ th {
 	background: #335980;
 	color: #fff;
 }
-
+.sumary
+{
+  float:left;
+}
 main article h2 {
 	margin-bottom: 20px;
 	font-weight: normal;
@@ -120,11 +126,18 @@ main article p {
 	font-size: 14px;
 	line-height: 27px;
 }
+.post img{
+ float:left;
+}
+.contact a{
+  float:left;
+}
  footer {
   margin: 1.25rem auto;
   padding: 2rem;
   width: 100%;
   max-width: 1000px;
+  text-align:center;
   align-self:center;
   background:#335980;
   color:#FAFAFA;
@@ -134,7 +147,8 @@ h1,h2{ padding: .5rem;
     font-family: 'Philosopher', sans-serif;
     font-size: 2rem;
     font-size: 2rem;
-    color:#335980;}
+    color:#335980;
+    text-align: center;}
 
 h3,h4,h6{
     font-family: 'Philosopher', sans-serif;
@@ -145,7 +159,8 @@ h3,h4,h6{
 }
 
 article{
-	margin: 10px auto;
+  margin: 10px auto;
+  padding:20px;
 	background-color: #4FD0FC;
     border: 1px solid #bbb;
     color:#335980;
@@ -158,7 +173,7 @@ article{
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
-    justify-content: center;
+    justify-content:center;
   }
   
   .gallery img {
@@ -176,10 +191,3 @@ article{
     opacity: 1;
   }
 
-/* Media Query for medium + screens */
-@media only screen and ( min-width: 40em) 
-{
-  li:first-child { display: none;	}
-  li { display: inline-block; margin-right: 1rem;}	
-  li a { color:#0A0A0A;}
-}
