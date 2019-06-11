@@ -115,6 +115,7 @@ th {
 {
   float:left;
 }
+
 main article h2 {
 	margin-bottom: 20px;
 	font-weight: normal;
@@ -166,8 +167,28 @@ article{
     color:#335980;
 	}
 
+  .container-gallery {
+    margin: 1rem auto; 
+    display:grid; 
+    grid-template-columns: 1fr 1fr; 
+    max-width: 1100px;
+  }
 
-  .gallery {
+  .container-gallery img {
+     width: 350px; 
+     height: auto; 
+     margin: 10px.5rem;
+    }
+
+  figcaption {
+    font-size: smaller;
+    text-align:center;}
+ 
+  /* hover effect */
+  .gallery:hover {
+    box-shadow: 0 0 50px #333;
+  }
+  /*.container-gallery {
     width: 100%;
     margin:auto;
     display:flex;
@@ -189,5 +210,5 @@ article{
   .gallery img:hover {
     border: 1px solid #fff;
     opacity: 1;
-  }
+  }*/
 

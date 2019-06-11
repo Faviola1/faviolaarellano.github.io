@@ -1,0 +1,62 @@
+/* Media Query for medium + screens */
+/*@media only screen and ( min-width: 40em) 
+{
+  li:first-child { display: none;	}
+  li { display: inline-block; margin-right: 1rem;}	
+  li a { color:#0A0A0A;}
+}*/
+
+/* medium and up views */
+@media (min-width: 60em) {
+    nav a:first-child { display: none;	}
+    
+    /*header nav { display: block; flex: 1 1 auto;
+     }
+    nav { flex-direction: row; }*/
+    header nav {
+      width: 100%;
+      margin: 0 auto;	
+      max-width: 100%; 
+      background-color: #898989;
+      display:flex;
+	  flex-direction: row;
+	  justify-content:center;
+	}
+	
+	  .container-gallery {
+		margin: 1rem; 
+		display:grid; 
+		grid-template-columns: 1fr 1fr; 
+		max-width: 500px;
+	  }
+	
+	  .container-gallery img {
+		 width: 300px; 
+		 height: auto; 
+		 margin: 10px.5rem;
+		}
+  }
+
+/*
+@media screen and (min-width: 40em) {
+	header {
+		flex-flow:row wrap;
+		padding-bottom: 20px;
+	}
+
+	header nav {
+		width: 100%;
+		background: rgba(255,255,255,.2);
+		text-align: center;
+		padding: 20px;
+	}
+
+	header nav a {
+		margin: 0 20px;
+	}
+
+	header .logo {
+		margin-bottom: 20px;
+	}
+}
+*/
