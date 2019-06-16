@@ -1,0 +1,55 @@
+
+form{
+	background: #FAFAFA;
+	width: 75%;
+	margin: 20px auto;
+	padding: 20px;
+	border-radius: 5px;
+
+}
+fieldset{
+	background: #FAFAFA;
+	margin: 20px auto;
+	padding: 20px;
+	border-radius: 5px;
+	border:2px solid #335980;
+}
+
+form input {
+	display: block;
+	width: 100%;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 3px;
+	border:1px 5px solid #335980;
+	font-family: Arial;
+	font-size: 16px;
+}
+
+form textarea {
+	min-height: 120px;
+	max-height: 300px;
+	min-width:100%;
+	max-width: 100%;
+}
+
+form input:focus,
+form textarea:focus {
+	border: 2px solid #4FD0FC;
+}
+
+form input[type="submit"] {
+	width: 200px;
+	margin:0 auto;
+	background: none;
+	border: 1px solid #335980;
+	padding: 10px;
+	cursor: pointer;
+	font-size: 16px;
+	border-radius: 3px;
+}
+
+form input[type="submit"]:hover {
+	background: #335980;
+	color: #fff;
+} 

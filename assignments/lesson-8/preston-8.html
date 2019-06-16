@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no,
+	initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>WeatherOnTime</title>
+	<meta name="description" content="Assignment Weather site for Faviola Arellano Student in CIT 230: Web Front-end Development at Brigham Young University-Idaho">
+	<link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small-8.css">
+  <link rel="stylesheet" href="css/large-8.css">
+  <script src="js/hamburger.js"></script>
+  
+ </head>
+<body>
+
+	<div class="container">
+		<header>
+			<div class="headings"> 
+				<img class="logo" src="images/logo1.png" alt="Logo Weather">
+				<div class="motto">
+						<h2>Weather On Time</h2>
+						<p>The Weather on Time</p>
+				</div>
+			</div>
+
+			<nav class="navigation">
+				<a href="#" onclick="toggleMenu()">&#9776; Menu</a>				
+				<a class="active" href="preston-8.html">Preston</a>
+				<a href="#">Soda Spring</a>
+				<a href="#">Fish Haven</a>
+				<a href="stormcenter.html">Storm Center</a>
+				<a href="gallery.html">Gallery</a>
+			</nav>
+		</header>
+		
+		<main>
+			<h1>Preston Town</h1>
+			<div class="image">
+				<img src="images/img-medium-480.png" alt="Preston Town">  
+						  
+				<section class="sumary">
+					<h3>Weather Sumary</h3>
+					<table>
+						<tr>            
+						  <th>Currently:</th>
+						  <th>Sunny</th>
+						</tr>
+						<tr>            
+						  <td>High:</td>
+						  <td><span id="temperature">76</span>° F</td>
+						</tr>
+						<tr>            
+						  <td>Humidity:</td>
+						  <td>69%</td>
+						</tr>
+						<tr>            
+							<td>Wind Speed:</td>
+							<td><span id="wind-speed">5</span>mph</td>
+						</tr>
+						<tr>            
+						   <td>Wind Chill:</td>
+						   <td><span id="chill"><script src="js/windchill.js"></script></span></td>
+						</tr>
+
+					  </table>
+			</section>
+		</div>
+			<section class="forecast">
+					<h3>5 Day Forecast</h3>
+					<table>
+						<tr>            
+						  <th>Wed</th>
+						  <th>Thu</th>
+						  <th>Wed</th>
+						  <th>Thu</th>
+						  <th>Wed</th>
+						</tr>
+						<tr >            
+						  <td>89°</td>
+						  <td>87°</td>
+						  <td>78°</td>
+						  <td>75°</td>
+						  <td>72°</td>
+						</tr>
+					  </table>
+			</section>
+			<div class="post">
+				<article>
+					<h2>Article Title</h2>
+					<h4>by autor</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				
+				<div class="imgarticle">
+					<img src="images/preston2.png" alt="Preston Town">
+				</div>
+			</article>
+		</div>
+			<section class="contact">
+				<a href="https://www.google.com/maps/@53.762636,-2.7072939,13.25z"><img src="images/map-preston.png" alt="Map Preston"></a>
+				
+				 <h6>Contact</h6>
+				 <p>
+				  	The Weather site <br>
+					Preston <br>
+					999.999.9999 <br>
+					info@weatherontime
+				</p>
+				  </section> 
+		</main>
+
+			<footer>
+					&copy;2019 The Weather site | Atributions |Faviola Arellano <br>
+					<script src="js/currentdate.js"></script> 
+		</footer>
+	</div>
+</body>
+</html>
