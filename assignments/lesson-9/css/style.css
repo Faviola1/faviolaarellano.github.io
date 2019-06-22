@@ -7,10 +7,12 @@ html {
   body {
     width: 800px;
     margin: 0 auto;
+    background: #a6daec;
   }
   
   h1, h2 {
     font-family: 'Faster One', cursive;
+    color:#09355e;
   }
   
   /* header styles */
