@@ -1,0 +1,42 @@
+
+
+
+
+ {"employees":[
+    { "firstName":"John", "lastName":"Doe" },
+    { "firstName":"Anna", "lastName":"Smith" },
+    { "firstName":"Peter", "lastName":"Jones" }
+  ]
+ }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "Piece": 
+    {
+       "Type": "A",
+       "Name": "Screw",
+       "Description": "Mechanical cylinder with a head used in the temporary fixation of some parts with others",
+       "characteristic": 
+        {
+            "Type": "metal",
+            "Length":10
+         },
+        "empty": ""
+     }
+  }
+
+
+
+
+

@@ -7,8 +7,8 @@
 	<title>WeatherOnTime</title>
 	<meta name="description" content="Assignment Weather site for Faviola Arellano Student in CIT 230: Web Front-end Development at Brigham Young University-Idaho">
 	<link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/small-7.css">
-  <link rel="stylesheet" href="css/large-7.css">
+  <link rel="stylesheet" href="css/small-8.css">
+  <link rel="stylesheet" href="css/large-8.css">
   <script src="js/hamburger.js"></script>
   
  </head>
@@ -26,10 +26,10 @@
 
 			<nav class="navigation">
 				<a href="#" onclick="toggleMenu()">&#9776; Menu</a>				
-				<a class="active" href="preston-7.html">Preston</a>
+				<a class="active" href="preston-8.html">Preston</a>
 				<a href="#">Soda Spring</a>
 				<a href="#">Fish Haven</a>
-				<a href="#">Storm Center</a>
+				<a href="stormcenter.html">Storm Center</a>
 				<a href="gallery.html">Gallery</a>
 			</nav>
 		</header>
@@ -37,18 +37,14 @@
 		<main>
 			<h1>Preston Town</h1>
 			<div class="image">
-				<img srcset="images/img-small-320.png 320w,
-							images/img-medium-480.png 760w"
-			   		  sizes="(max-width: 320px) 280px,
-					  		(max-width: 480px),800px"
-						 src="images/img-medium-480.png" alt="Preston Town">  
+				<img src="images/img-medium-480.png" alt="Preston Town">  
 						  
 				<section class="sumary">
 					<h3>Weather Sumary</h3>
 					<table>
 						<tr>            
-						  <th>Currently:</td>
-						  <th>Sunny</td>
+						  <th>Currently:</th>
+						  <th>Sunny</th>
 						</tr>
 						<tr>            
 						  <td>High:</td>
@@ -74,11 +70,11 @@
 					<h3>5 Day Forecast</h3>
 					<table>
 						<tr>            
-						  <th>Wed</td>
-						  <th>Thu</td>
-						  <th>Wed</td>
-						  <th>Thu</td>
-						  <th>Wed</td>
+						  <th>Wed</th>
+						  <th>Thu</th>
+						  <th>Wed</th>
+						  <th>Thu</th>
+						  <th>Wed</th>
 						</tr>
 						<tr >            
 						  <td>89°</td>
@@ -89,7 +85,7 @@
 						</tr>
 					  </table>
 			</section>
-			<section class="posts">
+			<div class="post">
 				<article>
 					<h2>Article Title</h2>
 					<h4>by autor</h4>
@@ -111,15 +107,16 @@
 					<img src="images/preston2.png" alt="Preston Town">
 				</div>
 			</article>
-			</section>
+		</div>
 			<section class="contact">
 				<a href="https://www.google.com/maps/@53.762636,-2.7072939,13.25z"><img src="images/map-preston.png" alt="Map Preston"></a>
-				<p>
+				
 				 <h6>Contact</h6>
+				 <p>
 				  	The Weather site <br>
 					Preston <br>
 					999.999.9999 <br>
-					info@weatherontime <br>
+					info@weatherontime
 				</p>
 				  </section> 
 		</main>

@@ -1,0 +1,36 @@
+
+
+<employees>
+  <employee>
+    <firstName>John</firstName> <lastName>Doe</lastName>
+  </employee>
+  <employee>
+    <firstName>Anna</firstName> <lastName>Smith</lastName>
+  </employee>
+  <employee>
+    <firstName>Peter</firstName> <lastName>Jones</lastName>
+  </employee>
+</employees>
+
+
+
+
+
+
+<piece type = "A">
+    <name> Screw </name>
+    <description>
+         Mechanical cylinder with a head 
+         used in the temporary fixation of 
+         some parts with other
+    </description>
+    <characteristic>
+        <type> metal </type>
+        <length> 10 </length>
+    </characteristic>
+    <empty> </empty>
+</piece>
+
+
+
+
