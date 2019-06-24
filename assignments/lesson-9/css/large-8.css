@@ -24,7 +24,7 @@
   }
 
   nav { display: block; flex: 1 1 auto; }
-}
+
 /*
 @media screen and (min-width: 40em) {
 	header {
@@ -48,3 +48,31 @@
 	}
 }
 */
+.container_home {
+	width:100%;
+	max-width: 1000px;
+	height: 500px;
+	display:flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+
+	/*flex-flow:row wrap;*/
+	justify-content:space-between;
+	/*align-items:center;*/
+	align-content:center;
+}
+
+.container_home .town {
+	width: 28%;
+	height: 500px;
+	text-align: center;
+	margin: 20px;
+	padding: 20px;
+	font-size: 2em;
+	order:1;
+	flex:1 1 auto;
+}
+.town img{
+width:100%;
+}
+}

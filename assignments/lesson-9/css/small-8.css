@@ -92,7 +92,7 @@ main {
   width: 100%;
   vertical-align: top;
 }
-
+/* CSS TABLE*/
 table, td, th{
 	border: 1px solid rgba(0,0,0, .2);
 }
@@ -167,6 +167,7 @@ article{
     color:#335980;
 	}
 
+  /* css gallery*/
   .container-gallery {
     margin: 1rem auto; 
     display:grid; 
@@ -188,7 +189,36 @@ article{
   .gallery:hover {
     box-shadow: 0 0 50px #333;
   }
-  /*.container-gallery {
+  /* css home*/
+
+  .container_home {
+    width:100%;
+    max-width: 900px;
+    height: auto;
+    background: #335980;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-content:center;
+  }
+
+  
+.container_home .town {
+	width: 100%;
+	height: 400px;
+	background:#4FD0FC;
+	text-align: center;
+	margin: 15px;
+	padding: 15px;
+	font-size: 1em;
+	flex:1 1 auto;
+}
+.town img{
+width:100%;
+
+
+/*
+  .container {
     width: 100%;
     margin:auto;
     display:flex;
@@ -197,7 +227,7 @@ article{
     justify-content:center;
   }
   
-  .gallery img {
+  .town{
     
     flex:1,1,auto;
     width: 400px;
@@ -207,7 +237,7 @@ article{
     border:1px solid #484848;
   }
   
-  .gallery img:hover {
+  .town:hover {
     border: 1px solid #fff;
     opacity: 1;
   }*/
