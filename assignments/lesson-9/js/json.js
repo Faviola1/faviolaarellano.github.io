@@ -20,7 +20,7 @@
     function show(jsonObj) {
         var town = jsonObj['towns'];
   
-      //  for (var i = 0; i < town.length; i++) {
+       for (var i = 4; i<town.length; i++) {
             var myArticle = document.createElement('article');
             var myH2 = document.createElement('h2');
             var myH3 = document.createElement('h3');
@@ -29,18 +29,18 @@
             var myPara3 = document.createElement('p');
            // var myList = document.createElement('ul');
 
-           myH2.textContent = town[2].name;
-           myH3.textContent = town[2].motto;
-           myPara1.textContent = 'Year Founded: ' + town[2].yearFounded;
-           myPara2.textContent = 'Current Population: ' + town[2].currentPopulation;
-           myPara3.textContent = 'Average Rainfall: ' + town[2].averageRainfall;
-      //  }
+           myH2.textContent = town[i].name;
+           myH3.textContent = town[i].motto;
+           myPara1.textContent = 'Year Founded: ' + town[i].yearFounded;
+           myPara2.textContent = 'Current Population: ' + town[i].currentPopulation;
+           myPara3.textContent = 'Average Rainfall: ' + town[i].averageRainfall;
+      
         myArticle.appendChild(myH2);
         myArticle.appendChild(myPara1);
         myArticle.appendChild(myPara2);
         myArticle.appendChild(myPara3);
      //   myArticle.appendChild(myList);
         section.appendChild(myArticle);
-        
+    } 
 
     }
