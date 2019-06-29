@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+body {font-family: 'Ubuntu', sans-serif;}
+
+table, td, th{
+	border: 1px solid rgba(0,0,0, .2);
+
+}
+
+thead, tfoot{
+	color:#000;
+	text-align:center;
+	background: #7fb9c2;
+}
+
+table {
+	margin:50px;
+	border-collapse: collapse;
+	width: 350px;
+	text-align: center;
+	box-shadow: 0 0 50px #628ca6;
+}
+
+tbody td {
+	padding: 10px 20px;
+	background:#e7ffed;
+}
+
+tbody .row-color
+{background: #7f4642;}
+
+th {
+	padding: 10px 20px;
+	background: #628ca6;
+	color: #fff;
+}
+
+tr:hover {
+	background: #e5e5e5;
+}
