@@ -45,7 +45,7 @@
                 myArticle.appendChild(myPara3);
             //   myArticle.appendChild(myList);
                 section.appendChild(myArticle);
-              document.getElementByClass('town')[c].appendChild(myArticle);
+             // document.getElementByClass('town')[c].appendChild(myArticle);
               c++;
         } 
     }
