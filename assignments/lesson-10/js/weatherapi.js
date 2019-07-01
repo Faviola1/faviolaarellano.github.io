@@ -17,11 +17,11 @@ addEventListener using the load parameter. */
     console.log(weatherData);
 
     document.getElementById('cc-temp').innerHTML = weatherData.main.temp;
-    //let icon ="http://openweathermap.org/img/wn/"+weatherData.weather[0].icon+".png";
+    
+    let icon = "http://openweathermap.org/img/wn/"+weatherData.weather[0].icon+".png";
+    let desc = weatherData.weather[0].description;
 
-    let desc=weatherData.weather[0].description;
-
-   // document.getElementById('cc-img').setAttribute('src',icon);
-  // document.getElementById('cc-img').setAttribute('alt',desc);
+   document.getElementById('cc-img').setAttribute('src',icon);
+   document.getElementById('cc-img').setAttribute('alt',desc);
 
     }
