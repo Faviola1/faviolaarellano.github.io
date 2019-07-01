@@ -14,10 +14,12 @@ forecastRequest.onload =  function ()
     console.log(forecastData);
 
     var forecastlist = forecastData.list;
-    var fday= [];
+   // var fdate= [];
+    var fday=[];
     var ficon = [];
     var ftemp = [];
     var fdesc = [];
+   // var day=new Date;
 
     for(i = 0; i < forecastlist.length; i++){
         
@@ -29,6 +31,13 @@ forecastRequest.onload =  function ()
             fdesc.push(forecastData.list[i].weather[0].description);
         }
     }
+
+  /*  for(i=0;i<5;i++)
+    {
+        var day=f.date[i];
+        fday[i]=day.getDay();
+    }*/
+
 let day01= fday[0];     
 let img01 = ficon[0];
 let temp01 = ftemp[0];
@@ -55,28 +64,28 @@ let temp05 = ftemp[4];
 let desc05 = fdesc[4];
 
 document.getElementById("day1").innerHTML = day01;
-document.getElementById("icon1").setAttribute("src", "http://openweathermap.org/img/w/" + img01 + ".png");
-document.getElementById("icon1").setAttribute("alt", desc01);
-document.getElementById("temp1").innerHTML = temp01.toFixed(1) + "&deg;F";
-
 document.getElementById("day2").innerHTML = day02;
-document.getElementById("icon2").setAttribute("src", "http://openweathermap.org/img/w/" + img02 + ".png");
-document.getElementById("icon2").setAttribute("alt", desc02);
-document.getElementById("temp2").innerHTML = temp02.toFixed(1) + "&deg;F";
-
 document.getElementById("day3").innerHTML = day03;
-document.getElementById("icon3").setAttribute("src", "http://openweathermap.org/img/w/" + img03 + ".png");
-document.getElementById("icon3").setAttribute("alt", desc03);
-document.getElementById("temp3").innerHTML = temp03.toFixed(1) + "&deg;F";
-
 document.getElementById("day4").innerHTML = day04;
-document.getElementById("icon4").setAttribute("src", "http://openweathermap.org/img/w/" + img04 + ".png");
-document.getElementById("icon4").setAttribute("alt", desc04);
-document.getElementById("temp4").innerHTML = temp04.toFixed(1) + "&deg;F";
-
 document.getElementById("day5").innerHTML = day05;
+
+document.getElementById("icon1").setAttribute("src", "http://openweathermap.org/img/w/" + img01 + ".png");
+document.getElementById("icon2").setAttribute("src", "http://openweathermap.org/img/w/" + img02 + ".png");
+document.getElementById("icon3").setAttribute("src", "http://openweathermap.org/img/w/" + img03 + ".png");
+document.getElementById("icon4").setAttribute("src", "http://openweathermap.org/img/w/" + img04 + ".png");
 document.getElementById("icon5").setAttribute("src", "http://openweathermap.org/img/w/" + img05 + ".png");
+
+document.getElementById("icon1").setAttribute("alt", desc01);
+document.getElementById("icon2").setAttribute("alt", desc02);
+document.getElementById("icon3").setAttribute("alt", desc03);
+document.getElementById("icon4").setAttribute("alt", desc04);
 document.getElementById("icon5").setAttribute("alt", desc05);
+
+
+document.getElementById("temp1").innerHTML = temp01.toFixed(1) + "&deg;F";
+document.getElementById("temp2").innerHTML = temp02.toFixed(1) + "&deg;F";
+document.getElementById("temp3").innerHTML = temp03.toFixed(1) + "&deg;F";
+document.getElementById("temp4").innerHTML = temp04.toFixed(1) + "&deg;F";
 document.getElementById("temp5").innerHTML = temp05.toFixed(1) + "&deg;F";
 
 
