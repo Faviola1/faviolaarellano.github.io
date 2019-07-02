@@ -9,7 +9,6 @@
 	<link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/small-8.css">
   <link rel="stylesheet" href="css/large-8.css">
-  <script src="js/hamburger.js"></script>
   
  </head>
 <body>
@@ -36,38 +35,42 @@
 		</header>
 		
 		<main>
+			
 			<h1>Preston Town</h1>
-			<div class="image">
-				<img src="images/img-medium-480.png" alt="Preston Town">  
-						  
-				<section class="sumary">
-					<h3>Weather Sumary</h3>
-					<table>
-						<tr>            
-						  <th>Currently:</th>
-						  <th><span id="currently"></span></th>
-						</tr>
-						<tr>            
-						  <td>High:</td>
-						  <td><span id="temperature"></span> &deg;F</td>
-						</tr>
-						<tr>            
-						  <td>Humidity:</td>
-						  <td><span id="humidity"></span>%</td>
-						</tr>
-						<tr>            
-							<td>Wind Speed:</td>
-							<td><span id="wind-speed"></span> mph</td>
-						</tr>
-						<tr>            
-						   <td>Wind Chill:</td>
-						   <td><span id="chill"></span> &deg;F</td>
-						</tr>
-
-					  </table>
-			</section>
+			<div class=container2>
+					<picture>
+							<source media="(max-width: 480px)" srcset="images/img-medium-480.png">
+							<img id="image" src="images/img-medium-480.png" alt="Preston Town">
+					</picture>
+					<div class="sumary">
+							<h3>Weather Sumary</h3>
+							<table>
+								<tr>            
+								  <td>Currently:</td>
+								  <td><span id="currently"></span></td>
+								</tr>
+								<tr>            
+								  <td>High:</td>
+								  <td><span id="temperature"></span> &deg;F</td>
+								</tr>
+								<tr>            
+								  <td>Humidity:</td>
+								  <td><span id="humidity"></span>%</td>
+								</tr>
+								<tr>            
+									<td>Wind Speed:</td>
+									<td><span id="wind-speed"></span> mph</td>
+								</tr>
+								<tr>            
+								   <td>Wind Chill:</td>
+								   <td><span id="chill"></span> &deg;F</td>
+								</tr>
+			
+							 </table>
+						</div>
+					
 		</div>
-			<section class="forecast">
+			<div class="forecast">
 					<h3>5 Day Forecast</h3>
 					<table>
 						<tr>            
@@ -78,11 +81,11 @@
 						  <th><span id="day5"></span></th>
 						</tr>
 						<tr>            
-							<td><img id="icon1"></td>
-							<td><img id="icon2"></td>
-							<td><img id="icon3"></td>
-							<td><img id="icon4"></td>
-							<td><img id="icon5"></td>
+							<td><img id="icon1" src="" alt=""></td>
+							<td><img id="icon2" src="" alt=""></td>
+							<td><img id="icon3" src="" alt=""></td>
+							<td><img id="icon4" src="" alt=""></td>
+							<td><img id="icon5" src="" alt=""></td>
 							
 						  </tr>
 						<tr >            
@@ -93,6 +96,11 @@
 							<td><span id="temp5"></span></td>
 						</tr>
 					  </table>
+					  <p>Weather date by:  <a href="https://openweathermap.org/" target=_blank> Open Weather Map </a></p>
+					</div>
+			<section class="information">
+				<h2>Information</h2>
+				<article></article>
 			</section>
 			<div class="post">
 				<article>
@@ -134,8 +142,11 @@
 			<footer>
 					&copy;2019 The Weather site | Atributions |Faviola Arellano <br>
 					<script src="js/currentdate.js"></script>
+					<script src="js/hamburger.js"></script>
 					<script src="js/weather-sumary.js"></script> 
 					<script src="js/forecast.js"></script>
+					<script src="js/towninformatio.js"></script>
+
 		</footer>
 	</div>
 </body>

@@ -8,7 +8,17 @@
 
 /* medium and up views */
 @media (min-width: 40em) {
-    nav a:first-child { display: none;	}
+
+	.navigation a:first-child
+    {
+        display: none;
+    }
+    .navigation a
+      {
+          display: inline-block;
+
+      }
+   /* nav a:first-child { display: none;	}*/
     
     /*header nav { display: block; flex: 1 1 auto;
      }

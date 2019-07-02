@@ -40,6 +40,7 @@
                 myPara3.textContent = 'Average Rainfall: ' + town[i].averageRainfall;
       
                 myArticle.appendChild(myH2);
+                myArticle.appendChild(myH3);
                 myArticle.appendChild(myPara1);
                 myArticle.appendChild(myPara2);
                 myArticle.appendChild(myPara3);

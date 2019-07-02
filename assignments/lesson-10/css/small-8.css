@@ -60,12 +60,24 @@ header nav {
   /*padding: 10px;*/
 }
 
-.responsive a{ display: block; }
+.navigation a:first-child
+    {
+        display: inline-block;
+    }
+.navigation a
+    {
+        display: none;
+    }
+
+.responsive a
+    {
+        display:inline-block;;
+    }
+
 header nav a {
   color: #fff;
 	text-decoration: none;
-	margin-right: 40px;
-  font-size: 18px;
+	font-size: 18px;
   padding: 10px;
 }
 header nav a:hover {
@@ -86,12 +98,46 @@ main {
   align-self: auto;
   padding: 10px;
   margin:20px;
-	width: 100%;
 }
-.image {
+.container2{
+  display: flex;
+}
+.container2 #image {
   width: 100%;
-  vertical-align: top;
+  margin: auto;
 }
+
+.container2 .summary{
+  float: left;
+}
+
+
+
+/*
+
+#image{
+    position: relative;
+}
+
+.sumary{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+}
+.container2 .sumary{
+  float: left;
+  padding: 10px 10px;;
+  box-shadow: 0 0 20px #F2F2F2;
+}*/
+/*CSS Forecasr*/
+
+.container .forecast{
+  margin: auto;
+	width: 80%;
+ align-content: center;
+	flex-wrap:wrap;
+}
+
 /* CSS TABLE*/
 table, td, th{
 	border: 1px solid rgba(0,0,0, .2);
@@ -99,7 +145,7 @@ table, td, th{
 
 table {
 	border-collapse: collapse;
-	width: 30%px;
+	width: 30%;
 	text-align: center;
 }
 
@@ -110,10 +156,6 @@ th, td {
 th {
 	background: #335980;
 	color: #fff;
-}
-.sumary
-{
-  float:left;
 }
 
 main article h2 {
@@ -215,30 +257,5 @@ article{
 }
 .town img{
 width:100%;
-
-
-/*
-  .container {
-    width: 100%;
-    margin:auto;
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:center;
-  }
-  
-  .town{
-    
-    flex:1,1,auto;
-    width: 400px;
-    margin: 20px;
-    padding: 5px;
-    opacity:0.8;
-    border:1px solid #484848;
-  }
-  
-  .town:hover {
-    border: 1px solid #fff;
-    opacity: 1;
-  }*/
+}
 
