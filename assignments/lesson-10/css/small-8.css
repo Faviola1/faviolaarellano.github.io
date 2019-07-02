@@ -18,7 +18,7 @@ body {
   flex-wrap:wrap;
   justify-content: center;
 }
-
+/* CSS Header*/
 header {
 	width: 100%;
 	padding: 10px 0 0 0;
@@ -33,21 +33,9 @@ header .headings{
 	width: 100%;
   display: flex;
 	flex-direction:row;
-	justify-content:space-between;
+	justify-content:center;
 	flex-direction:row;
 	flex-wrap:wrap;
-}
-
-.headings .logo{
-    /*width: 20%;
-    flex:1 1 auto;*/
-    float: left;
-
-}
-
-.headings .motto{
-  width: 70%;
-  flex:1 1 auto;
 }
 
 header nav {
@@ -96,61 +84,42 @@ main {
   max-width:900px;
   background: #FAFAFA;
   align-self: auto;
-  padding: 10px;
-  margin:20px;
-}
-.container2{
-  display: flex;
-}
-.container2 #image {
-  width: 100%;
-  margin: auto;
+  padding: 1em;
+  margin:1em;
 }
 
-.container2 .summary{
-  float: left;
+.container2 {
+	width: 100%;
+  position: relative;
+	
 }
 
-
-
-/*
-
-#image{
-    position: relative;
+.image img{
+  position: relative;
+  width:100%;
 }
 
-.sumary{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, 1fr);
-}
-.container2 .sumary{
-  float: left;
-  padding: 10px 10px;;
+.sumary { 
+  background:rgba(79,208,252, 0.6);
+  padding:1em;
+  position: absolute;
+  top:1em;
+  left:1em;
   box-shadow: 0 0 20px #F2F2F2;
-}*/
-/*CSS Forecasr*/
-
-.container .forecast{
-  margin: auto;
-	width: 80%;
- align-content: center;
-	flex-wrap:wrap;
 }
 
 /* CSS TABLE*/
 table, td, th{
-	border: 1px solid rgba(0,0,0, .2);
+	border: 1px solid rgba(0,0,0, .1);
 }
 
 table {
 	border-collapse: collapse;
-	width: 30%;
 	text-align: center;
 }
 
 th, td {
-	padding: 10px 20px;
+	padding: 5px 10px;
 }
 
 th {
@@ -158,23 +127,31 @@ th {
 	color: #fff;
 }
 
-main article h2 {
-	margin-bottom: 20px;
-	font-weight: normal;
-	font-size: 32px;
+/*CSS Forecast*/
+
+.container .forecast{
+  margin: auto;
+	width: 70%;
+  align-content: center;
+  flex-wrap:wrap;
+  text-align: center;
+	flex:1 1 auto;
 }
 
-main article p {
-	margin-bottom: 20px;
-	font-size: 14px;
-	line-height: 27px;
+.post, .information, .contact{
+	width: 100%;
+	background: #4FD0FC;
+  margin: 1em auto;
+  padding:1.5em;
+	color:#335980;
 }
-.post img{
- float:left;
+
+
+.contact a, .post img{
+  float: right;
 }
-.contact a{
-  float:left;
-}
+
+
  footer {
   margin: 1.25rem auto;
   padding: 2rem;
@@ -201,13 +178,7 @@ h3,h4,h6{
     border-bottom: 2px solid #bbb;
 }
 
-article{
-  margin: 10px auto;
-  padding:20px;
-	background-color: #4FD0FC;
-    border: 1px solid #bbb;
-    color:#335980;
-	}
+
 
   /* css gallery*/
   .container-gallery {
