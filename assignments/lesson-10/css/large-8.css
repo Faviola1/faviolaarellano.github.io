@@ -7,7 +7,7 @@
 }*/
 
 /* medium and up views */
-@media (min-width: 40em) {
+@media (min-width: 35em) {
 
 	.navigation a:first-child
     {
@@ -17,23 +17,74 @@
       {
           display: inline-block;
 
-      }
-   /* nav a:first-child { display: none;	}*/
-    
-    /*header nav { display: block; flex: 1 1 auto;
-     }
-    nav { flex-direction: row; }*/
-    header nav {
-      width: 100%;
-      margin: 0 auto;	
-      max-width: 100%; 
-      background-color: #898989;
-      display:flex;
-	  flex-direction: row;
-	  justify-content:center;
-  }
+	  }
+	  
+	  .forecast{
+		display:block; 
+		background: #FAFAFA;
+		margin: auto;
+		width: 100%;
+		text-align: center;
+		  }
+	.information{
+		display:block; 
+		background: #898989; 
+	}
+		.table_fore {
+			width:80%;
+			margin:0% 10%;	
+		}
+	.post img{
+		float: right;
+		width:50%; 
+		margin:1em;
+	}
 
-  nav { display: block; flex: 1 1 auto; }
+	.contact a img{
+		float: left;
+		width:40%;
+		margin:2em; 
+	}
+		header nav {
+		width: 100%;
+		margin: 0 auto;	
+		max-width: 100%; 
+		background-color: #898989;
+		display:flex;
+		flex-direction: row;
+		justify-content:center;
+	}
+
+	nav { display: block; flex: 1 1 auto; }
+	h1,h2{ 
+		font-size: 2rem;}
+	
+	h3,h4,h6{
+		font-size: 1.5rem;
+		text-align: Center;	
+	}
+	main {
+		width:90%;
+		max-width:900px;
+	}
+	
+		body,p{
+		
+			font-size: 1.3rem;
+			color:#335980;
+		}
+	
+		table {
+		  font-size: 1.1em;
+		}
+		
+		th, td {
+			padding:5px 10px;
+		}
+
+		
+	
+	
 
 /*
 @media screen and (min-width: 40em) {
