@@ -23,17 +23,17 @@
 		display:block; 
 		background: #FAFAFA;
 		margin: auto;
-		width: 100%;
+		width: 80%;
 		text-align: center;
 		  }
+
+		 
 	.information{
 		display:block; 
 		background: #898989; 
+		padding: 1em 3.5em;
 	}
-		.table_fore {
-			width:80%;
-			margin:0% 10%;	
-		}
+		
 	.post img{
 		float: right;
 		width:50%; 
@@ -75,7 +75,7 @@
 		}
 	
 		table {
-		  font-size: 1.1em;
+		  font-size: 1em;
 		}
 		
 		th, td {

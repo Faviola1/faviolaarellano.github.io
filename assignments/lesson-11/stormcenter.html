@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no,
+	initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>WeatherOnTime</title>
+	<meta name="description" content="Assignment Weather site for Faviola Arellano Student in CIT 230: Web Front-end Development at Brigham Young University-Idaho">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/small.css">
+	<link rel="stylesheet" href="css/large.css">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+ </head>
+<body>
+
+	<div class="container">
+		<header>
+			<div class="headings"> 
+				<img class="logo" src="images/logo1.png" alt="Logo Weather">
+				<div class="motto">
+						<h2>Weather On Time</h2>
+						<p>The Weather on Time</p>
+				</div>
+			</div>
+
+			<nav class="navigation">
+				<a href="#" onclick="toggleMenu()">&#9776; Menu</a>				
+				<a href="index.html">Home</a>	
+				<a href="preston.html">Preston</a>
+				<a href="soda-spring.html">Soda Spring</a>
+				<a href="fish-haven.html">Fish Haven</a>
+				<a class="active" href="stormcenter.html">Storm Center</a>
+				<a href="gallery.html">Gallery</a>
+			</nav>
+		</header>
+	
+	<main>
+			<h1>Storm Center</h1>
+			<form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Information:</legend>
+                    <label>Full Name* <input type="text" name="name" pattern="[A-Za-z ].{5,}" placeholder="Name" required></label>
+                    <label>E_mail <input type="email" name="e-mail" placeholder="example@mymail.com"></label>
+                    <label>Phone* <input type="tel" name="phone" placeholder="###-###-####" required></label>
+                    <label>Zip Code* <input type="text" name="code" required></label>
+                    <label>Storm Date<input type="date" name="date"></label>
+                    <label>Storm Type
+                    	<input list="stormtype" name="stormtype">
+							<datalist id="stormtype">
+								<option value="Flash Flood">
+								<option value="Hail">
+								<option value="Hurricane">
+								<option value="Thunderstorm">
+								<option value="Tornado">
+							</datalist>
+                    </label>					
+					<label>Storm Severity (1 to 10)
+						<input type="range" id="rating" value="5" min="1" max="10" step="1" 
+						oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+						<span id="ratingvalue">5</span><br>
+					</label>
+                    <label>Storm Region
+                        <select name="region">
+                            <option value="">Select Region</option>
+                            <option value="preston">Preston</option>
+                            <option value="sugar-city">Sugar City</option>
+                            <option value="fish-haven">Fish Haven</option>
+                        </select>
+                	</label>
+    
+					<fieldset>
+						<legend>Are you in danger? <em>(Choose one)</em></legend>
+							<label><input type="radio" name="danger" value="yes"> Yes</label>
+							<label><input type="radio" name="danger" value="maybe"> Maybe</label>
+							<label><input type="radio" name="danger" value="no"> No</label>       
+					</fieldset>
+
+					<label >Additional Info <textarea name="aditional"></textarea> </label>	 
+			</fieldset>
+				
+				<input class="send" type="submit" value="Send Report">
+
+     	</form>
+	</main>
+
+	<footer>
+		&copy;2019 The Weather site | Atributions |Faviola Arellano <br>
+		<script src="js/currentdate.js"></script> 
+	</footer>
+	</div>
+</body>
+</html>
