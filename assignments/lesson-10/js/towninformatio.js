@@ -27,18 +27,18 @@ function show(jsonObj) {
       //||town[i].name=='Soda Springs'||town[i].name=='Fish Haven') 
         {
             var myArticle = document.createElement('article');
-            var myH2 = document.createElement('h2');
+           /* var myH2 = document.createElement('h2');
             var myH3 = document.createElement('h3');
             var myPara1 = document.createElement('p');
             var myPara2 = document.createElement('p');
-            var myPara3 = document.createElement('p');
+            var myPara3 = document.createElement('p');*/
             var myList = document.createElement('ul');
 
-            myH2.textContent = town[i].name;
+           /* myH2.textContent = town[i].name;
             myH3.textContent = town[i].motto;
             myPara1.textContent = 'Year Founded: ' + town[i].yearFounded;
             myPara2.textContent = 'Current Population: ' + town[i].currentPopulation;
-            myPara3.textContent = 'Average Rainfall: ' + town[i].averageRainfall;
+            myPara3.textContent = 'Average Rainfall: ' + town[i].averageRainfall;*/
             myList.textContent = 'Events: '; 
 
             var townEvents = town[i].events;
@@ -51,10 +51,10 @@ function show(jsonObj) {
     
 
          //  myArticle.appendChild(myH2);
-            myArticle.appendChild(myH3);
+           /* myArticle.appendChild(myH3);
             myArticle.appendChild(myPara1);
             myArticle.appendChild(myPara2);
-            myArticle.appendChild(myPara3);
+            myArticle.appendChild(myPara3);*/
             myArticle.appendChild(myList);
            section.appendChild(myArticle);
          //  document.getElementById("info").innerHTML = section;

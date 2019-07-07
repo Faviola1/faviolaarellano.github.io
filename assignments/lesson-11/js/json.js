@@ -46,6 +46,9 @@
                 myArticle.appendChild(myPara3);
             //   myArticle.appendChild(myList);
                 section.appendChild(myArticle);
+                //var towns = document.getElementById(town[i].name);
+
+                //towns.appendChild(myArticle);
              // document.getElementByClass('town')[c].appendChild(myArticle);
               c++;
         } 
