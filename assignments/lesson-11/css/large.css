@@ -22,10 +22,22 @@
 	  .forecast{
 		display:block; 
 		background: #FAFAFA;
-		margin: auto;
+		margin:0 10% 0 10%;
 		width: 80%;
 		text-align: center;
 		  }
+	
+	.forecast table{
+		width: 100%;
+	}
+
+	.sumary h3{
+		font-size:0,3em;
+		margin:auto;
+	}
+	.sumary table{
+		font-size:0,5em;
+	}
 
 		 
 	.information{
@@ -112,7 +124,7 @@
 .container_home {
 	width:100%;
 	max-width: 1000px;
-	height: 250px;
+	height: 600px;
 	display:flex;
 	flex-direction:column;
 	flex-wrap:wrap;
@@ -125,11 +137,10 @@
 
 .container_home .town {
 	width: 28%;
-	height: 200px;
 	text-align: center;
 	margin: 20px;
 	padding: 20px;
-	font-size: 2em;
+	font-size: 1em;
 	order:1;
 	flex:1 1 auto;
 }
@@ -137,4 +148,6 @@
 .town img{
 width:100%;
 }
+
+.container_town section{grid-template-columns: 1fr;}
 }
