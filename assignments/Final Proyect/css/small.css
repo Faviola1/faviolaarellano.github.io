@@ -1,0 +1,56 @@
+/* Media Query for medium - screens */
+/*@media only screen and ( min-width: 40em) */
+@media screen and (max-width: 600px) {
+	header {
+		flex-direction:column;
+		padding-bottom: 20px;
+	}
+
+	.navigation {
+		width: 100%;
+		background: #070D59;
+		text-align: left;
+        padding: 10px 20px;
+        display:flex;
+        flex-direction: column;
+    }
+    .navigation a:first-child
+    {
+        display: inline-block;
+    }
+    .navigation a
+    {
+        display: none;
+    }
+
+    .responsive a
+    {
+        padding:5px 20px;
+        display:inline-block;;
+    }
+
+	header .logo {
+		margin-bottom: 10px;
+	}
+
+	footer {
+		flex-direction:column;
+		text-align: center;
+	}
+
+	footer .author {
+		order:2;
+	}
+
+	footer .social-media {
+		order: 1;
+		margin-bottom: 20px;
+    }
+  
+}
+
+@media screen and (max-width: 400px){
+	aside {
+        display: none;
+	}
+}

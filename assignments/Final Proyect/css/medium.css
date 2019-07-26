@@ -1,0 +1,18 @@
+/* Media Query for medium + screens */
+/*@media only screen and ( min-width: 40em) */
+
+@media screen and (max-width: 800px){
+	main {
+		width: 100%;
+	}
+
+	aside {
+		width: 100%;
+		flex-direction:row;
+	}
+
+	aside .ad {
+		width: 40%;
+	}
+}
+
