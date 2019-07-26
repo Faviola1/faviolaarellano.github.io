@@ -1,10 +1,10 @@
 //URL http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID={APIKEY}
 //APIKEY: c2f1a30c08bf1465f982f10da498c31a
-// Soda Springs zip: 591
+// Bern zipcode: 83220
 
 // **** WEATHER SUMARY ***
 let weatherRequest = new XMLHttpRequest();
-let apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?zip=28422,us&units=imperial&APPID=c2f1a30c08bf1465f982f10da498c31a'
+let apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?zip=83220,us&units=imperial&APPID=c2f1a30c08bf1465f982f10da498c31a'
 
 weatherRequest.open('GET', apiURLstring, true);
 weatherRequest.send();
@@ -56,7 +56,7 @@ function show(jsonObj) {
     var temple = jsonObj['temple'];
     
    for (var i = 0; i<temple.length; i++) {
-      if(temple[i].name=='Cochabamba')
+      if(temple[i].name=='Bern')
       
         {   var myArticle = document.createElement('article');
             var myH31 = document.createElement('h3');

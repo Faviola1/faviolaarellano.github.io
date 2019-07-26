@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no,
+	initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>TempleInnAndSuites</title>
+	<meta name="description" content="Assignment Temple Inn & Suites for Faviola Arellano Student in CIT 230: Web Front-end Development at Brigham Young University-Idaho">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+	
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/large.css">
+	<link rel="stylesheet" href="css/small.css">
+	
+		 
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<div class="logo">
+				<img src="images/logo.png" alt="LogoTemple">
+			</div>
+		
+			<nav class="navigation">
+					<a href="#" onclick="toggleMenu()">&#9776; Menu</a>	
+					<a href="index.html">Home</a>		
+					<a class="active" href="temple.html">Temple</a>
+					<a href="reservation.html">Reservation</a>
+					<a href="services.html">Services</a>
+					<a href="contact.html">Contact</a>
+			</nav>
+		</header>
+		<main>
+			<article>
+				<div class="thumb">
+                    <img src="images/bern-switzerland-temple.jpg" alt="Bern Temple">
+                
+                
+                </div>
+                <div class="sumary">
+                    <h4> Weather Sumary</h4>
+                    <ul>
+                        <li>Currently : <span id="currently"></span></li>
+                        <li>High : <span id="temperature"></span> &deg;F</li>
+                        <li>Humidity : <span id="humidity"></span>%</li>
+                        <li>Wind Speed : <span id="wind-speed"></span> mph</li>
+                        <li>Wind Chill : <span id="chill"></span> &deg;F</li>
+                    </ul>
+        
+                </div>
+                <h2>Bern - Switzerland Temple</h2>
+               
+                <p>The Cochabamba Bolivia Temple was the first temple built in Bolivia.</p>
+                <p>The Cochabamba Bolivia Temple is one of only three temples with a 
+                central tower surrounded by four corner towers. </p>
+                <p>At the groundbreaking ceremony, President Gordon B. Hinckley urged members 
+                to righteousness. "Get a temple recommend now," he said. "Be worthy of a temple 
+                recommend now. If you are not worthy, get yourselves worthy. You won't be able to go 
+                to the temple here for at least two years. But let that temple recommend be a reminder 
+                of that to which you look forward. And we will come and dedicate this sacred building. 
+                And it will bless your lives. We will then be able to have a temple in the nation of Bolivia.</p>
+            </article>
+            
+            <section>
+                
+            </section>
+		</main>
+		<aside>
+            <div class="ad">
+                <h3 class="titulo"> Sao Paulo - Brazil</h3>
+                <a href="temple-sao.html"><img src="images/sao-paulo-brazil-temple.jpg" alt="sao-paulo-brazil-temple"></a>
+                <a href="temple-sao.html">Information</a>
+            </div>
+            <div class="ad">
+                <h3 class="titulo"> Rome - Italy </h3>
+                <a href="temple-rome.html"><img src="images/Rome-Temple.jpg" alt="Rome-Temple"></a>
+                <a href="temple-rome.html">Information</a>
+            </div>
+
+            <div class="ad">
+                <h3 class="titulo"> Cochabamba - Bolivia </h3>
+                <a href="temple-cbba.html"><img src="images/cochabamba-bolivia-temple.jpg" alt="cochabamba-bolivia-temple"></a>
+                <a href="temple-cbba.html">Information</a>
+            </div>
+
+            <div class="ad">
+                    <h3 class="titulo">Bern - Zwitzerland </h3>
+                    <a href="temple-bern.html"><img src="images/bern-switzerland-temple.jpg" alt="bern-switzerland-temple"></a>
+                    <a href="temple-bern.html">Information</a>
+                </div>
+
+		</aside>
+		<footer>
+			<div class="author">
+					&copy;2019 Temple Inn & Suites site | Atributions |Faviola Arellano <br>
+					<script src="js/currentdate.js"></script>
+			</div>
+		
+			<div class="social-media">
+				<a target="blank" href="http://www.facebook.com/">Facebook</a>
+				<a target="blank" href="http://www.twitter.com/">Twitter</a>
+			</div>
+		</footer>
+	</div>
+    <script src="js/hamburger.js"></script>
+    <script src="js/bern-info.js"></script>
+</body>
+</html>
