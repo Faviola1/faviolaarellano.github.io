@@ -38,7 +38,7 @@ weatherRequest.onload =  function ()
 var section = document.querySelector('section');
 
 /*To obtain the JSON*/
-var requestURL = 'https://github.com/Faviola1/faviolaarellano.github.io/blob/master/temples.json';
+var requestURL = 'https://faviola1.github.io/faviolaarellano.github.io/assignments/lesson-13/temple.json';
 
 /*Create a request*/
 var request = new XMLHttpRequest();
@@ -59,22 +59,22 @@ function show(jsonObj) {
       if(temple[i].name=='Cochabamba')
       
         {   var myArticle = document.createElement('article');
-    
-            var myH2 = document.createElement('h2');
-            var myH3 = document.createElement('h3');
+            var myH31 = document.createElement('h3');
+            var myH32 = document.createElement('h3');
             var myPara1 = document.createElement('p');
             var myPara2 = document.createElement('p');
             var myPara3 = document.createElement('p');
-            var myPara3 = document.createElement('p');
+            var myPara4 = document.createElement('p');
+            var myPara5 = document.createElement('p');
             var myList = document.createElement('ul');
 
-              
-            myH2.textContent = temple[i].name;
-            myH3.textContent = temple[i].country;
+            myH31.textContent = 'Name : ' +temple[i].name;
+            myH32.textContent = 'Country : ' +temple[i].country;
             myPara1.textContent = 'Address : ' + temple[i].address;
             myPara2.textContent = 'Telephone : ' + temple[i].telephone;
             myPara3.textContent = 'Announcement : ' + temple[i].announcement;
             myPara4.textContent = 'Dedication : ' + temple[i].dedication;
+            myPara5.textContent = 'Services : ';
 
             myList.textContent; 
             var templeServices = temple[i].services;
@@ -85,12 +85,13 @@ function show(jsonObj) {
                 myList.appendChild(listItem);
             }
   
-            myArticle.appendChild(myH2);
-            myArticle.appendChild(myH3);
+            myArticle.appendChild(myH31);
+            myArticle.appendChild(myH32);
             myArticle.appendChild(myPara1);
             myArticle.appendChild(myPara2);
             myArticle.appendChild(myPara3);
-            myArticle.appendChild(myPara3);
+            myArticle.appendChild(myPara4);
+            myArticle.appendChild(myPara5);
             myArticle.appendChild(myList);
             section.appendChild(myArticle);
     } 
