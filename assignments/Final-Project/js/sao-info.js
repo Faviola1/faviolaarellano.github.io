@@ -56,7 +56,7 @@ function show(jsonObj) {
     var temple = jsonObj['temple'];
     
    for (var i = 0; i<temple.length; i++) {
-      if(temple[i].name=='Sao Paulo')
+      if(temple[i].name=='São Paulo')
       
         {   var myArticle = document.createElement('article');
             var myH31 = document.createElement('h3');

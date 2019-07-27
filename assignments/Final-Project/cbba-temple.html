@@ -4,10 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no,
 	initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>TempleInnAndSuites</title>
+	<title>Cochabamba Temple</title>
 	<meta name="description" content="Assignment Temple Inn & Suites for Faviola Arellano Student in CIT 230: Web Front-end Development at Brigham Young University-Idaho">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
-	
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Rochester&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/large.css">
 	<link rel="stylesheet" href="css/small.css">
@@ -25,7 +26,7 @@
 			<nav class="navigation">
 					<a href="#" onclick="toggleMenu()">&#9776; Menu</a>	
 					<a href="index.html">Home</a>		
-					<a class="active" href="temple.html">Temple</a>
+					<a class="active" href="cbba-temple.html">Temple</a>
 					<a href="reservation.html">Reservation</a>
 					<a href="services.html">Services</a>
 					<a href="contact.html">Contact</a>
@@ -34,21 +35,9 @@
 		<main>
 			<article>
 				<div class="thumb">
-					<img src="images/cochabamba-bolivia-temple.jpg" alt="Cochabamba Temple">
-                
-                
+					<img src="images/cochabamba-bolivia-temple-banner.jpg" alt="Cochabamba Temple">
                 </div>
-                <div class="sumary">
-                    <h4> Weather Sumary</h4>
-                    <ul>
-                        <li>Currently : <span id="currently"></span></li>
-                        <li>High : <span id="temperature"></span> &deg;F</li>
-                        <li>Humidity : <span id="humidity"></span>%</li>
-                        <li>Wind Speed : <span id="wind-speed"></span> mph</li>
-                        <li>Wind Chill : <span id="chill"></span> &deg;F</li>
-                    </ul>
-        
-                </div>
+                
                 <h2>Cochabamba-Bolivia Temple</h2>
                
                 <p>The Cochabamba Bolivia Temple was the first temple built in Bolivia.</p>
@@ -67,33 +56,45 @@
             </section>
 		</main>
 		<aside>
-
 			<div class="ad">
+				<h3 class="titulo">Cochabamba </h3>
+				<div class="sumary">
+					<h4> Weather Sumary</h4>
+					<ul>
+						<li>Currently : <span id="currently"></span></li>
+						<li>High : <span id="temperature"></span> &deg;F</li>
+						<li>Humidity : <span id="humidity"></span>%</li>
+						<li>Wind Speed : <span id="wind-speed"></span> mph</li>
+						<li>Wind Chill : <span id="chill"></span> &deg;F</li>
+					</ul>
+				</div>
+			</div>
+			<div class="ad">
+				<h3 class="titulo">List Temples </h3>
 				<h3 class="titulo"> Rome - Italy </h3>
-				<a href="temple-rome.html"><img src="images/Rome-Temple.jpg" alt="Rome-Temple"></a>
-				<a href="temple-rome.html">Information</a>
+				<a href="rome-temple.html"><img src="images/Rome-Temple.jpg" alt="Rome-Temple"></a>
+				<a href="rome-temple.html">Information</a>
 			</div>
 			<div class="ad">
 					<h3 class="titulo">Bern - Zwitzerland </h3>
-					<a href="temple-bern.html"><img src="images/bern-switzerland-temple.jpg" alt="bern-switzerland-temple"></a>
-					<a href="temple-bern.html">Information</a>
+					<a href="bern-temple.html"><img src="images/bern-switzerland-temple.jpg" alt="bern-switzerland-temple"></a>
+					<a href="bern-temple.html">Information</a>
             </div>
             <div class="ad">
-                    <h3 class="titulo"> Cochabamba - Bolivia </h3>
-                    <a href="temple-cbba.html"><img src="images/cochabamba-bolivia-temple.jpg" alt="cochabamba-bolivia-temple"></a>
-                    <a href="temple-cbba.html">Information</a>
-                </div>
-                <div class="ad">
                         <h3 class="titulo"> Sao Paulo - Brazil</h3>
-                        <a href="temple-sao.html"><img src="images/sao-paulo-brazil-temple.jpg" alt="sao-paulo-brazil-temple"></a>
-                        <a href="temple-sao.html">Information</a>
-                </div>
-
+                        <a href="sao-temple.html"><img src="images/sao-paulo-brazil-temple.jpg" alt="sao-paulo-brazil-temple"></a>
+                        <a href="sao-temple.html">Information</a>
+            </div>
+			<div class="ad">
+					<p><a href="https://churchofjesuschristtemples.org/">
+					 For more information about temples</a>
+					</p>
+			 </div>
 		</aside>
 		<footer>
 			<div class="author">
-					&copy;2019 Temple Inn & Suites site | Atributions |Faviola Arellano <br>
-					<script src="js/currentdate.js"></script>
+				<p>&copy;2019 Temple Inn & Suites site | Atributions |Faviola Arellano</p>					<p><script src="js/currentdate.js"></script> -  Weather date by :  
+				<a href="https://openweathermap.org/" target=_blank> Open Weather Map </a></p>
 			</div>
 		
 			<div class="social-media">

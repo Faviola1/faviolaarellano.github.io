@@ -52,7 +52,7 @@ header .navigation a:hover{
 
 main {
 	background: #CEDDEF;
-	padding: 15px;
+	padding: 20px;
 	width: 70%;
 }
 
@@ -65,21 +65,25 @@ main article .thumb img {
 	vertical-align: top;
 }
 
-main article h2 {
+ h2 {
 	margin-bottom: 15px;
 	font-weight: normal;
-	font-size: 2em;
+	font-size: 2.8em;
+	font-family: 'Rochester', cursive;
+	color: #070D59;
+	text-align: center;
 }
 
 main article p{
 	margin-bottom: 10px;
 	font-size: 14px;
-	line-height: 27px;
+	line-height: 25px;
 }
 
-main section{
+main section,.services{
 	padding: .5em .5em .5em 2em;
 	font-size: 14px;
+	line-height: 25px;
 }
 
 aside {
@@ -116,7 +120,9 @@ aside .ad {
 
 .titulo{
 	color:#5893D4;
-	font-size: 20px;
+	font-size: 1.5 em;
+	
+
 }
 footer {
 	margin: 20px 0;

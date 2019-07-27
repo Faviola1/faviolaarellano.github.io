@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no,
 	initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>TempleInnAndSuites</title>
+	<title>Reservation Temple Inn And Suites</title>
 	<meta name="description" content="Assignment Temple Inn & Suites for Faviola Arellano Student in CIT 230: Web Front-end Development at Brigham Young University-Idaho">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Rochester&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/large.css">
 	<link rel="stylesheet" href="css/small.css">
-	
+	<link rel="stylesheet" href="css/form.css">	
 		 
 </head>
 
@@ -25,41 +25,55 @@
 		
 			<nav class="navigation">
 					<a href="#" onclick="toggleMenu()">&#9776; Menu</a>	
-					<a class="active" href="index.html">Home</a>		
-					<a href="rome-temple.html">Temple</a>
-					<a href="reservation.html">Reservation</a>
+					<a href="index.html">Home</a>		
+					<a href="bern-temple.html">Temple</a>
+					<a class="active" href="reservation.html">Reservation</a>
 					<a href="services.html">Services</a>
 					<a href="contact.html">Contact</a>
 			</nav>
 		</header>
 		<main>
-			<article>
-				<div class="thumb">
-					<img src="images/temple.png" alt="Temple">
-				</div>
+			<h2>Reservation</h2>
+				<form method="get" action="thanks.html">
+						<fieldset>
+							<legend>Information:</legend>
+							<label>Full Name* <input type="text" name="name" pattern="[A-Za-z ].{5,}" placeholder="Name" required></label>
+							<label>E_mail <input type="email" name="e-mail" placeholder="example@mymail.com"></label>
+							<label>Phone* <input type="tel" name="phone" placeholder="###-###-####" required></label>
+							<label>home State or Country <input type="text" name="state" ></label>
+							<label>number of people* <input type="text" name="number" required></label>
+							<label>Reservation start Date <input type="date" name="date"></label>
+							<label>Reservation end Date <input type="date" name="date1"></label>
+											
+							<label>Room Type
+								<select name="romm">
+									<option value="">Select Room Type</option>
+									<option value="Simple">Simple</option>
+									<option value="Double">Double</option>
+									<option value="Family">Family</option>
+									<option value="other">Other</option>
+								</select>
+							</label><br><br>
+				
+							<label >Additional Info <textarea name="aditional"></textarea> </label>	 
+					</fieldset>
+						
+						<input class="send" type="submit" value="Send reservation">
 		
-				<h2>Temple Inn & Suites</h2>
-				<p>The Temple Inn & Suites is a hotel chain headquartered in Bethesda, 
-				MD that builds and manages specialized hotel accommodations near temple locations
-				of The Church of Jesus Christ of Latter-day Saints around the world. </p>
+				 </form>
 		
-				<p>This website is to promote and provide information about the specialized 
-				services that this hotel chain offers to meet the needs of temple patrons who come 
-				to serve in the temple or who participate in events such as sealings, weddings, 
-				receptions, and youth trips.</p>
-			</article>
 		</main>
 		<aside>
 
 			<div class="ad">
 				<h3 class="titulo"> Reservation </h3>
-				<a href="reservation.html"><img src="images/reservation.jpg" alt="Reservation"></a>
-				<a href="reservation.html">Reservation</a>
+				<img src="images/boda.jpg" alt="Boda">
+				
 			</div>
 			<div class="ad">
 					<h3 class="titulo"> Services </h3>
-					<a href="services.html"><img src="images/services.jpg" alt="Services"></a>
-					<a href="services.html">Services</a>
+					<img src="images/misionary.jpg" alt="Services">
+					
 				</div>
 
 		</aside>

@@ -7,11 +7,12 @@
 	<title>TempleInnAndSuites</title>
 	<meta name="description" content="Assignment Temple Inn & Suites for Faviola Arellano Student in CIT 230: Web Front-end Development at Brigham Young University-Idaho">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
-	
+	<link href="https://fonts.googleapis.com/css?family=Rochester&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/large.css">
 	<link rel="stylesheet" href="css/small.css">
-	
+	<link rel="stylesheet" href="css/form.css">	
 		 
 </head>
 
@@ -24,11 +25,11 @@
 		
 			<nav class="navigation">
 					<a href="#" onclick="toggleMenu()">&#9776; Menu</a>	
-					<a class="active" href="index.html">Home</a>		
-					<a href="temple.html">Temple</a>
+					<a href="index.html">Home</a>		
+					<a href="rome-temple.html">Temple</a>
 					<a href="reservation.html">Reservation</a>
 					<a href="services.html">Services</a>
-					<a href="contact.html">Contact</a>
+					<a class="active" href="contact.html">Contact</a>
 			</nav>
 		</header>
 		<main>
@@ -37,29 +38,43 @@
 					<img src="images/temple.png" alt="Temple">
 				</div>
 		
-				<h2>Temple Inn & Suites</h2>
+				<h2>Contact</h2>
 				<p>The Temple Inn & Suites is a hotel chain headquartered in Bethesda, 
 				MD that builds and manages specialized hotel accommodations near temple locations
 				of The Church of Jesus Christ of Latter-day Saints around the world. </p>
+				
+				<div class="services">
+				<ul>
+					<li> Address at 4800 Montgomery Ln #300	</li>
+					<li>Bethesda, MD 20814</li>
+					<li><a href="https://www.google.com/maps/@39.0038878,-77.107556,17z">Map</a></li>
+				</ul>
+			</div>
+				<form method="get" action="thanks.html">
+						<fieldset>
+							<legend>Contact:</legend>
+							<label>E_mail <input type="email" name="e-mail" placeholder="example@mymail.com"></label>
+									
+							<label >Message <textarea name="aditional"></textarea> </label>	 
+						</fieldset>
+						
+						<input class="send" type="submit" value="Send">
 		
-				<p>This website is to promote and provide information about the specialized 
-				services that this hotel chain offers to meet the needs of temple patrons who come 
-				to serve in the temple or who participate in events such as sealings, weddings, 
-				receptions, and youth trips.</p>
+				 </form>
 			</article>
 		</main>
 		<aside>
 
 			<div class="ad">
-				<h3 class="titulo"> Reservation </h3>
-				<a href="reservation.html"><img src="images/reservation.jpg" alt="Reservation"></a>
-				<a href="reservation.html">Reservation</a>
+				<h3 class="titulo"> Map </h3>
+				<a target="blank" href="https://www.google.com/maps/@39.0038878,-77.107556,17z"><img src="images/map.png" alt="Map"></a>
+				<a href="https://www.google.com/maps/@39.0038878,-77.107556,17z.html">Address</a>
 			</div>
 			<div class="ad">
 					<h3 class="titulo"> Services </h3>
 					<a href="services.html"><img src="images/services.jpg" alt="Services"></a>
 					<a href="services.html">Services</a>
-				</div>
+			</div>
 
 		</aside>
 		<footer>

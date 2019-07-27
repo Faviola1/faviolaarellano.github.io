@@ -1,29 +1,29 @@
 
 form{
-	background: #FAFAFA;
-	width: 75%;
-	margin: 20px auto;
-	padding: 20px;
+	background: #CEDDEF;
+	width: 80%;
+	margin: 15px auto;
+	padding: 15px;
 	border-radius: 5px;
 
 }
 fieldset{
 	background: #FAFAFA;
-	margin: 20px auto;
-	padding: 20px;
+	margin: 15px auto;
+	padding: 15px;
 	border-radius: 5px;
-	border:2px solid #335980;
+	border:2px solid #070D59;
 }
 
 form input {
 	display: block;
 	width: 100%;
-	padding: 20px;
-	margin-bottom: 20px;
+	padding: 15px;
+	margin-bottom: 15px;
 	border-radius: 3px;
-	border:1px 5px solid #335980;
+	border:1px 5px solid #5893D4;
 	font-family: Arial;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 form textarea {
@@ -35,21 +35,21 @@ form textarea {
 
 form input:focus,
 form textarea:focus {
-	border: 2px solid #4FD0FC;
+	border: 2px solid #5893D4;
 }
 
 form input[type="submit"] {
 	width: 200px;
 	margin:0 auto;
 	background: none;
-	border: 1px solid #335980;
+	border: 1px solid #070D59;
 	padding: 10px;
 	cursor: pointer;
-	font-size: 16px;
+	font-size: 15px;
 	border-radius: 3px;
 }
 
 form input[type="submit"]:hover {
-	background: #335980;
+	background: #5893D4;
 	color: #fff;
 } 
