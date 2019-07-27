@@ -53,7 +53,7 @@ header .navigation a:hover{
 main {
 	background: #CEDDEF;
 	padding: 20px;
-	width: 70%;
+	width: 75%;
 }
 
 main article .thumb {
@@ -87,7 +87,7 @@ main section,.services{
 }
 
 aside {
-	width: 30%;
+	width: 25%;
 	background: #070D59;
 	padding: 15px;
 	display: flex;
